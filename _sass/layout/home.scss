@@ -151,7 +151,7 @@
 /* Sidebar is visible */
 @media all and (min-width: 831px) {
   #post-list {
-    margin-top: 3rem;
+    // margin-top: 3rem;
 
     .post-preview {
       padding: 0.5rem;
@@ -192,6 +192,12 @@
       display: none;
     }
   } /* .pagination */
+}
+
+@media all and (min-width: 850px) {
+  #post-list {
+    margin-top: 3rem;
+  }
 }
 
 /* Panel hidden */

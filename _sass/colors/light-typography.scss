@@ -61,7 +61,8 @@
   --pin-color: #999fa4;
 
   /* Posts */
-  --toc-highlight: #563d7c;
+  // --toc-highlight: #563d7c;
+  --toc-highlight: var(--sidebar-active-color);
   --btn-share-hover-color: var(--link-color);
   --card-hovor-bg: #eeeeee;
   --card-border-color: #ececec;

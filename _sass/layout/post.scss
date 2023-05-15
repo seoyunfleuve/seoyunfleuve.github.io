@@ -162,12 +162,13 @@ h1 + .post-meta {
   .btn {
     @include btn-post-nav;
 
-    color: var(--link-color);
+    color: var(--sidebar-active-color);
 
     &:hover {
-      background: #2a408e;
       color: #ffffff;
-      border-color: #2a408e;
+      background: rgba(66, 66, 66) !important;
+      border-color: rgba(66, 66, 66) !important;
+      box-shadow: none !important;
     }
 
     &.disabled {
