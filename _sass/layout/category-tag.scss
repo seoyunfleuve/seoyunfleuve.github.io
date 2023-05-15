@@ -7,6 +7,12 @@
   border-bottom: 2px dotted var(--dash-color);
 }
 
+#page-category {
+  .category-title {
+    font-size: 1.7rem;
+  }
+}
+
 #page-category,
 #page-tag {
   ul > li {
@@ -30,7 +36,9 @@
     > a {
       @extend %no-bottom-border;
 
-      font-size: 1.1rem;
+      // font-size: 1.1rem;
+      font-size: 0.95rem;
+      color: var(--sidebar-active-color);
     }
 
     /* post's date */
@@ -72,6 +80,14 @@
         overflow: hidden;
         text-overflow: ellipsis;
       }
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  #page-category {
+    .category-title {
+      font-size: 1.5rem !important;
     }
   }
 }
