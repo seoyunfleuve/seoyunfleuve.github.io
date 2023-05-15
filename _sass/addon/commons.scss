@@ -229,10 +229,14 @@ i {
 /* --- Panels --- */
 
 .access {
-  top: 2rem;
-  transition: top 0.2s ease-in-out;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  transition: top 0.5s ease-in-out;
+  // top: 2rem;
+  // transition: top 0.2s ease-in-out;
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  // margin-bottom: 4rem;
 
   &:only-child {
     position: -webkit-sticky;
@@ -277,9 +281,9 @@ i {
     }
   }
 
-  [data-topbar-visible='true'] & > div {
-    top: 6rem;
-  }
+  // [data-topbar-visible='true'] & > div {
+  //   top: 6rem;
+  // }
 }
 
 #access-lastmod {
