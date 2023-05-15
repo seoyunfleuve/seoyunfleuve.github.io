@@ -55,10 +55,10 @@
 }
 
 %link-hover {
+  color: #f7a145;
+  // border-bottom: 1px solid #f7a145;
   // color: #d2603a !important;
   // border-bottom: 1px solid #d2603a;
-  color: #f7a145 !important;
-  border-bottom: 1px solid #f7a145;
   text-decoration: none;
 }
 
@@ -67,7 +67,8 @@
 }
 
 %link-underline {
-  border-bottom: 1px solid var(--link-underline-color);
+  // border-bottom: 1px solid var(--link-underline-color);
+  border-bottom: none;
 }
 
 %clickable-transition {

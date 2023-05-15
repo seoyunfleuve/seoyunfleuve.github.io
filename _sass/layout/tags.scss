@@ -3,13 +3,24 @@
 */
 
 .tag {
-  border-radius: 0.7em;
-  padding: 6px 8px 7px;
+  // border-radius: 0.7em;
+  // padding: 6px 8px 7px;
+  border-radius: 9999px;
+  padding: 0.5rem 0.8rem;
   margin-right: 0.8rem;
   line-height: 3rem;
   letter-spacing: 0;
-  border: 1px solid var(--tag-border) !important;
-  box-shadow: 0 0 3px 0 var(--tag-shadow);
+  border: 1px solid var(--btn-border-color) !important;
+  color: var(--label-color);
+  // border: 1px solid var(--tag-border) !important;
+  // box-shadow: 0 0 3px 0 var(--tag-shadow);
+
+  &:hover {
+    background-color: rgba(66, 66, 66);
+    border-color: rgba(66, 66, 66) !important;
+    color: #ffffff !important;
+    transition: none;
+  }
 
   span {
     margin-left: 0.6em;
