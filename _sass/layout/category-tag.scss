@@ -82,12 +82,27 @@
       }
     }
   }
-}
 
-@media all and (max-width: 576px) {
   #page-category {
     .category-title {
       font-size: 1.5rem !important;
     }
   }
 }
+
+// @media all and (max-width: 849px) {
+//   #page-category {
+//     .category-title {
+//       font-size: 1.2rem !important;
+//       margin-top: 1rem;
+//     }
+//   }
+// }
+
+// @media all and (max-width: 1199px) {
+//   #page-category {
+//     .category-title {
+//       font-size: 1.5rem;
+//     }
+//   }
+// }
