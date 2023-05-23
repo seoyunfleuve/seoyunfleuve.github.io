@@ -27,7 +27,6 @@ layout: default
       {% for _include in layout.panel_includes %} {% assign _include_path =
       _include | append: '.html' %} {% include {{ _include_path }} %} {% endfor
       %} {% include trending-tags.html %}
-      <!-- {% include update-list.html %} -->
     </div>
   </div>
 </div>
@@ -37,10 +36,29 @@ layout: default
 <div class="row">
   <div
     id="tail-wrapper"
-    class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4 mt-5"
+    class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4 pl-xl-4 mt-5"
   >
     {% for _include in layout.tail_includes %} {% assign _include_path =
     _include | append: '.html' %} {% include {{ _include_path }} %} {% endfor %}
+
+    <div class="giscus-comment">
+      <script
+        src="https://giscus.app/client.js"
+        data-repo="seoyunfleuve/seoyunfleuve.github.io"
+        data-repo-id="R_kgDOJhz0RA"
+        data-category="Comments"
+        data-category-id="DIC_kwDOJhz0RM4CWqP4"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async
+      ></script>
+    </div>
   </div>
 </div>
 {% endif %}

@@ -360,8 +360,12 @@ h1 + .post-meta {
     margin-bottom: 2rem;
   }
 
-  /* stylelint-disable-next-line selector-id-pattern */
-  #disqus_thread {
+  // /* stylelint-disable-next-line selector-id-pattern */
+  // #disqus_thread {
+  //   min-height: 8.5rem;
+  // }
+
+  .giscus-comment {
     min-height: 8.5rem;
   }
 }
