@@ -132,10 +132,10 @@
 
 /* Hide SideBar and TOC */
 @media all and (max-width: 830px) {
-  .post-preview {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-  }
+  // .post-preview {
+  //   margin-left: -0.5rem;
+  //   margin-right: -0.5rem;
+  // }
 
   .pagination {
     justify-content: space-evenly;

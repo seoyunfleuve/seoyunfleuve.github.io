@@ -1550,6 +1550,12 @@ $sidebar-display: 'sidebar-display';
     @extend %full-width;
     @include pl-pr(0);
   }
+
+  #core-wrapper,
+  #tail-wrapper {
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+  }
 }
 
 /* hide sidebar and panel */
