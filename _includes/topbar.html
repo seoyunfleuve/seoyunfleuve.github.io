@@ -12,18 +12,18 @@
         {% assign paths = page.url | split: '/' %} {% if paths.size == 0 or
         page.layout == 'home' %} -->
         <!-- index page -->
-        <!-- <span>{{ site.data.locales[site.lang].tabs.home | capitalize }}</span>
+        <!-- <span>{{ site.data.locales[include.lang].tabs.home | capitalize }}</span>
 
         {% else %} {% for item in paths %} {% if forloop.first %}
         <span>
           <a href="{{ '/' | relative_url }}">
-            {{ site.data.locales[site.lang].tabs.home | capitalize }}
+            {{ site.data.locales[include.lang].tabs.home | capitalize }}
           </a>
         </span>
 
         {% elsif forloop.last %} {% if page.collection == 'tabs' %}
         <span
-          >{{ site.data.locales[site.lang].tabs[item] | default: page.title
+          >{{ site.data.locales[include.lang].tabs[item] | default: page.title
           }}</span
         >
         {% else %}
@@ -31,7 +31,7 @@
         {% endif %} {% elsif page.layout == 'category' or page.layout == 'tag' %}
         <span>
           <a href="{{ item | relative_url }}">
-            {{ site.data.locales[site.lang].tabs[item] | default: page.title }}
+            {{ site.data.locales[include.lang].tabs[item] | default: page.title }}
           </a>
         </span>
         {% endif %} {% endfor %} {% endif %} </span
@@ -41,12 +41,12 @@
       <!-- <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i> -->
 
       <!-- <div id="topbar-title">
-        {% if page.layout == 'home' %} {{- site.data.locales[site.lang].title |
+        {% if page.layout == 'home' %} {{- site.data.locales[include.lang].title |
         default: site.title -}} {% elsif page.collection == 'tabs' or page.layout
         == 'page' %} {%- capture tab_key -%}{{ page.url | split: '/' }}{%-
-        endcapture -%} {{- site.data.locales[site.lang].tabs[tab_key] | default:
+        endcapture -%} {{- site.data.locales[include.lang].tabs[tab_key] | default:
         page.title -}} {% else %} {{-
-        site.data.locales[site.lang].layout[page.layout] | default: page.layout |
+        site.data.locales[include.lang].layout[page.layout] | default: page.layout |
         capitalize -}} {% endif %}
       </div> -->
 
@@ -65,7 +65,7 @@
             id="search-input"
             aria-label="search"
             autocomplete="off"
-            placeholder="{{ site.data.locales[site.lang].search.hint | capitalize }}"
+            placeholder="{{ site.data.locales[include.lang].search.hint | capitalize }}"
           />
         </span>
         <span id="search-cancel"
@@ -81,7 +81,7 @@
         <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
           <a href="{{ '/' | relative_url }}" class="nav-link">
             <!-- <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> -->
-            <span>{{ site.data.locales[site.lang].tabs.home | upcase }}</span>
+            <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
           </a>
         </li>
         <!-- the real tabs -->
@@ -91,7 +91,7 @@
             <!-- <i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded"></i> -->
             {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
     
-            <span>{{ site.data.locales[site.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
           </a>
         </li> <!-- .nav-item -->
         {% endfor %}

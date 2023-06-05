@@ -3,6 +3,8 @@ layout: page
 # The Category layout
 ---
 
+{% include lang.html %}
+
 <div id="page-category">
   <h1 class="category-title">
     <i class="far fa-folder-open fa-fw text-muted mr-1"></i>
@@ -16,7 +18,7 @@ layout: page
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <span class="dash flex-grow-1"></span>
       {% include datetime.html date=post.date wrap='span' class='text-muted
-      small' %}
+      small' lang=lang %}
     </li>
     {% endfor %}
   </ul>

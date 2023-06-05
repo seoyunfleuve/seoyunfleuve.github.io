@@ -1955,11 +1955,6 @@ $sidebar-display: 'sidebar-display';
     // max-width: $main-content-max-width;
   }
 
-  #core-wrapper,
-  #tail-wrapper {
-    padding-right: 4.5rem !important;
-  }
-
   #back-to-top {
     right: calc(
       (100vw - #{$sidebar-width-large} - #{$main-content-max-width}) / 2 + 2rem
